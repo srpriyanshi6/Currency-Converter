@@ -1,6 +1,7 @@
-const BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/inr/usd.json";
+const BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
 
 const dropdownselect = document.querySelectorAll(".dropdown select");
+const btn=document.querySelector("form button");
 
 for (let select of dropdownselect) {
     for (currencyCode in countryList) {
@@ -26,3 +27,22 @@ const updateFlag = (element) => {
     let img = element.parentElement.querySelector("img");
     img.src = update;
   };
+
+  btn.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    let amount=document.querySelector(".amount input");
+    let amountValue=amount.value;
+    if(amountValue==="" || amountValue<1){
+        amountValue=1;
+        amount.value="1";
+    }
+  });
+
+const fromCurr = document.querySelector(".from select");
+const fromCurrency= fromCurr.value.toLowerCase();
+// console.log(fromCurrency);
+
+const toCurr = document.querySelector(".to select");
+const toCurrency= toCurr.value.toLowerCase();
+// console.log(toCurrency);
+const URL = `${BASE_URL}/${fromCurrency}/${toCurrency}.json`;

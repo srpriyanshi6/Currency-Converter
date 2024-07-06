@@ -8,12 +8,12 @@ body{
     justify-content: center;
     align-items : center;
     min-height : 100vh;
-    background-image: url('/assets/3719ebdbfc5497a68688ec7604b6d440.jpg/');
+    background-image: url('assets/c0d517f86c70b470ebb9f094be83ef8a.jpg');
     background-size: cover;
+    backdrop-filter: blur(1.5px);
 }
-
 .container{
-    background-color: aqua;
+    background-color: rgba(215, 215, 215, 0.9);
     padding: 2rem;
     border-radius: 1rem;
     min-height: 45vh;
