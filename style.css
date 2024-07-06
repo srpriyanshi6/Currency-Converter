@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    min-height : 100vh;
+    background-image: url('/assets/3719ebdbfc5497a68688ec7604b6d440.jpg/');
+    background-size: cover;
+}
+
+.container{
+    background-color: aqua;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+}
+
+form{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+form select, input, button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 1px solid lightgrey;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.selectfrom img{
+    max-width: 2rem;
+}
+
+.selectfrom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.selectfrom select{
+    width: auto;
+    font-size: 1rem;
+}
+
+.info{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.exchangebutton{
+    height: 3rem;
+    background-color: darkblue;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
